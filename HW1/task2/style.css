@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: darkgoldenrod;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#header{
+    background-color: burlywood;
+    flex-grow:  1;
+}
+
+#footer{
+    background-color: burlywood;
+    flex-grow: 1;
+}
+
+#content{
+    background-color: chocolate;
+    flex-grow: 8;
+}
