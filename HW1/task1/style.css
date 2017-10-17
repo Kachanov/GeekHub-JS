@@ -1,0 +1,35 @@
+.content{
+    width: 700px;
+    height: 250px;
+    background-color: burlywood;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content > div{
+    width: 250px;
+    height: 120px;
+    background-color: darkgoldenrod;
+    margin: 40px;
+    border: 1px solid black;
+
+}
+
+.content > div > img{
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+.content > div > p{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.content > div > div{
+    width: 150px;
+    height: 20px;
+}
