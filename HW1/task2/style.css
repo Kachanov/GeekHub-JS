@@ -1,28 +1,39 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
-.main {
-    width: 100vw;
-    height: 100vh;
-    background-color: darkgoldenrod;
-
+.page
+{
+    background-color: bisque;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    font: 18px Helvetica;
 }
 
-#header{
-    background-color: burlywood;
-    flex-grow:  1;
+#header,
+#footer
+{
+    height: 75px;
+    background-color: goldenrod;
+    width: 100%;
+    text-align: center;
 }
 
-#footer{
-    background-color: burlywood;
-    flex-grow: 1;
+#leftside,
+#rightside
+{
+    height: 100vh; /*try 100% or 100vh*/
+    width: 300px;
+    background-color: darkgoldenrod;
+    text-align: center;
 }
 
-#content{
-    background-color: chocolate;
-    flex-grow: 8;
+#content
+{
+    flex: 1;
+    height: 100vh;
+    background-color: antiquewhite;
+    text-align: center;
 }
