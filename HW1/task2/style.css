@@ -5,17 +5,19 @@ body{
 
 .page
 {
-    background-color: bisque;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-    font: 18px Helvetica;
+    flex-direction: row;
+
+    font-family: Arial;
+    font-size: 20px;
+    background-color: bisque;
 }
 
 #header,
 #footer
 {
-    height: 75px;
+    height: 10vh;
     background-color: goldenrod;
     width: 100%;
     text-align: center;
@@ -24,7 +26,7 @@ body{
 #leftside,
 #rightside
 {
-    height: 100vh; /*try 100% or 100vh*/
+    height: 80vh;
     width: 300px;
     background-color: darkgoldenrod;
     text-align: center;
@@ -32,8 +34,8 @@ body{
 
 #content
 {
-    flex: 1;
-    height: 100vh;
+    flex-grow: 1;
+    height: 80vh;
     background-color: antiquewhite;
     text-align: center;
 }
