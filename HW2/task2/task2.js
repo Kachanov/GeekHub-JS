@@ -6,7 +6,7 @@ function getCountOfStringParameters() {
             count++;
         }
     }
-    alert(count);
+    return count;
 }
 
-getCountOfStringParameters("hello", "world", 1, 2, 3);
+alert( getCountOfStringParameters("hello", "world", 1, 2, 3) );
