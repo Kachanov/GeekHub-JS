@@ -1,7 +1,7 @@
 function getArrayWithUpperCase(string) {
-    var initialSting = string;
+    var initialString = string;
 
-    var arrayOfStrings = initialSting.split(" ");
+    var arrayOfStrings = initialString.split(" ");
     var arrayUpperCase = [];
 
     for(var i = 0; i < arrayOfStrings.length; i++){
