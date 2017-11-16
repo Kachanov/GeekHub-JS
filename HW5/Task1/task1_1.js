@@ -3,7 +3,7 @@ Array.prototype.filterWhere = function (dataArray) {
 
   for(var i = 0; i < this.length; i++){
       for(var key in dataArray){
-          //if(this[i][key].match(dataArray[key])){ 
+          //if(this[i][key].match(dataArray[key])){
           if(dataArray[key].test(this[i][key])){
               newArray.push(this[i]);
           }
