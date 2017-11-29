@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Task 1</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div id="products" class="products">
+
+            <div data-product class="product">
+                <div class="photo"><img src="images/macbook_air_13.jpg"></div>
+                <div data-drag-helper class="name">Macbook air 13</div>
+                <div class="price">26 000 UAH</div>
+            </div>
+
+            <div data-product class="product">
+                <div class="photo"><img src="images/macbook_12.jpg"></div>
+                <div data-drag-helper class="name">Macbook 12</div>
+                <div class="price">55 5000 UAH</div>
+            </div>
+
+            <div data-product class="product">
+                <div class="photo"><img src="images/macbook_pro_15.jpg"></div>
+                <div data-drag-helper class="name">Macbook air 13</div>
+                <div class="price">115 500 UAH</div>
+            </div>
+
+        </div>
+
+        <table data-cart class="cart">
+            <tr data-cart-product class="table-header">
+                <td class="table-column">Number</td>
+                <td class="table-column">Name</td>
+                <td class="table-column">Price</td>
+                <td data-counts="" class="table-column">Quantity</td>
+            </tr>
+        </table>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="task1.js"></script>
+    </body>
+</html>

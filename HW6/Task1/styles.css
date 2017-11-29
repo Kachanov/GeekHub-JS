@@ -1,0 +1,60 @@
+.products {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.product{
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.product ~ .product{
+    margin-left: 20px;
+}
+
+.name{
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 5px;
+    cursor: -webkit-grabbing;
+}
+
+body > .name{
+    position: absolute;
+    z-index: 10;
+    background-color: #ffffff;
+}
+
+.price{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.cart{
+    border: 1px solid black;
+    min-height: 30px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.table-header{
+    display: flex;
+}
+
+.table-column{
+    border: 1px solid black;
+    min-width: 150px;
+    min-height: 20px;
+    text-align: center;
+
+}
+
+.dragging{
+    opacity: 0.5;
+}
+
+.overlaps{
+    border: 1px solid red;
+}
