@@ -48,7 +48,34 @@ body > .name{
     min-width: 150px;
     min-height: 20px;
     text-align: center;
+}
 
+.table-column-number{
+    border: 1px solid black;
+    min-width: 150px;
+    min-height: 20px;
+    text-align: center;
+}
+
+.table-column-name{
+    border: 1px solid black;
+    min-width: 150px;
+    min-height: 20px;
+    text-align: center;
+}
+
+.table-column-price{
+    border: 1px solid black;
+    min-width: 150px;
+    min-height: 20px;
+    text-align: center;
+}
+
+.table-column-quantity{
+    border: 1px solid black;
+    min-width: 150px;
+    min-height: 20px;
+    text-align: center;
 }
 
 .dragging{
