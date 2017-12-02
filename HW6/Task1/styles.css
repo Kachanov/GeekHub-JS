@@ -27,7 +27,7 @@ body > .name{
     background-color: #ffffff;
 }
 
-.price{
+.product > .price{
     border: 1px solid black;
     text-align: center;
 }
@@ -37,6 +37,7 @@ body > .name{
     min-height: 30px;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .table-header{
@@ -84,4 +85,11 @@ body > .name{
 
 .overlaps{
     border: 1px solid red;
+}
+
+.summary{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
 }

@@ -1,6 +1,9 @@
 (function () {
 
     var body = jQuery(document.body);
+    var total = 0;
+    var itemNumber = 0;
+    var itemQuantity = 0;
 
     jQuery("#products > * [data-drag-helper]").on("mousedown", function (event) {
         var helper = jQuery(event.currentTarget);
@@ -25,16 +28,19 @@
         product.addClass("dragging");
 
         var carts = jQuery("[data-cart]").toArray().map(function (cart) {
-           var rect = cart.getBoundingClientRect();
-           return {
-               node: jQuery(cart),
-               rect: rect
-           }
+            var rect = cart.getBoundingClientRect();
+            return {
+                node: jQuery(cart),
+                rect: rect
+            }
         });
 
         var item = jQuery(event.currentTarget).parent();
-        var itemPrice = jQuery(item).find(".price").text();
         var itemName = jQuery(item).find(".name").text();
+        var itemPrice = jQuery(item).find(".price").text();
+
+
+
 
 
 
@@ -58,23 +64,31 @@
         });
 
 
+
+
+
         body.on("mouseup.dragProduct", function (event) {
             var newElement = jQuery("" +
                 "<tr data-cart-product class=\"table-header\">\n" +
                 "   <td class=\"table-column-number\"></td>\n" +
                 "   <td class=\"table-column-name\"></td>\n" +
                 "   <td class=\"table-column-price\"></td>\n" +
-                "   <td data-counts=\"\" class=\"table-column-quantity\"></td>\n" +
+                "   <td data-counts class=\"table-column-quantity\"></td>\n" +
                 "</tr>");
 
+            newElement.find(".table-column-number").text(++itemNumber);
             newElement.find(".table-column-name").text(itemName);
             newElement.find(".table-column-price").text(itemPrice);
 
 
             jQuery("[data-cart]").append(newElement);
-            newElement = null;
+            jQuery("[data-cart]").removeClass("overlaps");
+
             helper.closest("[data-product]").removeClass("dragging");
             clone.remove();
+
+            total = total + parseFloat(itemPrice);
+            jQuery("[data-summary]").find(".price").text(total);
 
             body.off("mousemove.dragProduct");
             body.off("mouseup.dragProduct");
