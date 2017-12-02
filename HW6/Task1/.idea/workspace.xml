@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e04a5737-bc56-49b9-b351-18913559c061" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../HW3/HTTP_Server/node_modules/iconv-lite/lib/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../HW3/HTTP_Server/node_modules/raw-body/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../HW3/HTTP_Server/node_modules/setprototypeof/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../HW3/Validation_Server/node_modules/iconv-lite/lib/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../HW3/Validation_Server/node_modules/raw-body/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../HW3/Validation_Server/node_modules/setprototypeof/index.d.ts" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles.css" afterPath="$PROJECT_DIR$/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task1.js" afterPath="$PROJECT_DIR$/task1.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/drag'n'drop.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -165,18 +156,17 @@
       <workItem from="1511901203081" duration="9229000" />
       <workItem from="1512141202556" duration="3835000" />
       <workItem from="1512154928515" duration="4453000" />
-      <workItem from="1512234281153" duration="3928000" />
+      <workItem from="1512234281153" duration="4000000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21445000" />
+    <option name="totallyTimeSpent" value="21517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21705426" sideWeight="0.49576783" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21705426" sideWeight="0.49576783" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
