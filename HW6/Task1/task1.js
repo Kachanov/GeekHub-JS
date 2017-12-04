@@ -3,7 +3,7 @@
     var body = jQuery(document.body);
     var total = 0;
     var itemNumber = 0;
-    var itemQuantity = 0;
+    var itemQuantity = 1;
 
     jQuery("#products > * [data-drag-helper]").on("mousedown", function (event) {
         var helper = jQuery(event.currentTarget);
@@ -74,11 +74,15 @@
                 "   <td class=\"table-column-name\"></td>\n" +
                 "   <td class=\"table-column-price\"></td>\n" +
                 "   <td data-counts class=\"table-column-quantity\"></td>\n" +
+                "<td><input data-delete type='button' id='delete' class='delete' value='Del'></td>" +
                 "</tr>");
+
+
 
             newElement.find(".table-column-number").text(++itemNumber);
             newElement.find(".table-column-name").text(itemName);
             newElement.find(".table-column-price").text(itemPrice);
+            //newElement.find(".table-column-quantity").text(itemQuantity);
 
 
             jQuery("[data-cart]").append(newElement);
@@ -90,11 +94,20 @@
             total = total + parseFloat(itemPrice);
             jQuery("[data-summary]").find(".price").text(total);
 
+            jQuery(newElement.find(".delete")).on("click", function (event) {
+                total = total - parseFloat(itemPrice);
+                console.log(jQuery(newElement.find(".table-column-price").text()));
+                jQuery(event.currentTarget.closest("tr").remove());
+                jQuery("[data-summary]").find(".price").text(total);
+            });
+
             body.off("mousemove.dragProduct");
             body.off("mouseup.dragProduct");
         });
 
     });
+
+
 
 
     function overlaps(rect1, rect2) {
