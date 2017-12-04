@@ -44,6 +44,10 @@ body > .name{
     display: flex;
 }
 
+.table-item{
+    display: flex;
+}
+
 .table-column{
     border: 1px solid black;
     min-width: 150px;
@@ -84,7 +88,7 @@ body > .name{
 }
 
 .overlaps{
-    border: 1px solid red;
+    border: 5px solid red;
 }
 
 .summary{
